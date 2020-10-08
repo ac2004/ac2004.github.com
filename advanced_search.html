@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <link rel="stylesheet" type="text/css" href="google_search.css">
+        <style type="text/css">
+            #AdvancedSearchBut{
+                background-color: rgb(109, 176, 238);
+                color:  white;               
+                padding-left: 10px;
+                padding-right: 10px;
+                border-color: rgb(65, 144, 218);
+            }
+            #AdvancedSearchBut:hover{
+                background-color: rgb(88, 163, 233);
+            }
+            #heading{
+                color: red;
+                font-size: large;
+            }
+            td{
+                height: 30px;
+                padding: 5px;
+            }
+            input[type="text"]{
+                height: 25px;
+                width: 500px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="upper-right">
+            <a href="index.html">Google Search</a>
+        </div>
+        <h2 id="heading">Advanced Search</h2>
+        <hr>        
+        <form action="https://google.com/search">            
+            <table>
+                <tr><td>Find Pages With...</td><td></td></td></tr>
+                <tr><td><label for="id_as_q">all these words: </label></td><td><input type="text" name="as_q" id="id_as_q"></td></tr>
+                <tr><td><label for="id_as_epq">this exact word or phrase: </label></td><td><input type="text" name="as_epq" id="id_as_epq"></td></tr>
+                <tr><td><label for="id_as_oq">any of these words: </label></td><td><input type="text" name="as_oq" id="id_as_oq"></td></tr>
+                <tr><td><label for="id_as_eq">none of these words: </label></td><td><input type="text" name="as_eq" id="id_as_eq"></td></tr>           
+                <tr><td></td><td align="right"><input id="AdvancedSearchBut" type="submit" value="Advanced Search"></td></tr>
+            </table>
+        </form>
+    </body>
+</html>
